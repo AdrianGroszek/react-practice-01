@@ -1,13 +1,68 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+	--white: #dedede;
+	--black: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+	font-family: sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: var(--white);
+	color: var(--black);
+	max-width: 500px;
+	padding: 1rem;
+	margin: 0 auto;
+}
+
+.form-add-friend {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-add-friend > * {
+	margin-bottom: 0.25rem;
+}
+
+.form-add-friend label input {
+	margin-right: 0.5rem;
+}
+
+.friends-list {
+	width: 100%;
+	min-height: 100px;
+}
+
+.friends-list li {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding: 1rem;
+	margin-bottom: 0.5rem;
+	border-radius: 4px;
+	list-style-type: none;
+	background-color: #fff;
+}
+
+.friends-list li .picture {
+	height: 70px;
+	width: 70px;
+	margin-right: 1rem;
+	background-color: tomato;
+	border-radius: 100px;
+}
+
+.friends-list li .friend-info > * {
+	padding: 0.25rem;
+}
+
+.male {
+	color: blue;
+}
+
+.female {
+	color: pink;
 }
